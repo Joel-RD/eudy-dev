@@ -1,211 +1,182 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-theme="dark">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eudy Joel - Portafolio de Desarrollador Backend</title>
-    <link rel="stylesheet" href="styeles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lucide-icons@0.284.0/dist/umd/lucide.min.js">
+    <title>Eudy Joel | Backend Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="styeles.css" rel="stylesheet"> 
 </head>
 
-<body>
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <a href="#home" class="logo">Eudy<span>Joel</span></a>
-
-            <!-- Desktop Navigation -->
-            <nav class="nav-desktop">
-                <a href="#home" class="nav-link active">Inicio</a>
-                <a href="#about" class="nav-link">Sobre mí</a>
-                <a href="#experience" class="nav-link">Experiencia</a>
-                <a href="#projects" class="nav-link">Proyectos</a>
-                <a href="#stack" class="nav-link">Stack</a>
-                <a href="#contact" class="nav-link">Contacto</a>
-            </nav>
-
-            <!-- Mobile Menu Button -->
-            <button class="menu-toggle" aria-label="Toggle menu">
-                <span class="menu-icon"></span>
-            </button>
-        </div>
-
-        <!-- Mobile Navigation -->
-        <nav class="nav-mobile">
-            <div class="nav-mobile-links">
-                <a href="#home" class="nav-link">Inicio</a>
-                <a href="#about" class="nav-link">Sobre mí</a>
-                <a href="#experience" class="nav-link">Experiencia</a>
-                <a href="#projects" class="nav-link">Proyectos</a>
-                <a href="#stack" class="nav-link">Stack</a>
-                <a href="#contact" class="nav-link">Contacto</a>
+<body data-theme="dark">
+    <!-- Theme Switcher -->
+    <div class="theme-switch">
+        <div class="theme-switch-track" onclick="toggleTheme()" role="button" aria-label="Toggle theme">
+            <div class="theme-switch-thumb">
+                <i data-lucide="moon" class="theme-icon-dark"></i>
             </div>
-        </nav>
+        </div>
+        <span class="theme-label">Theme</span>
+    </div>
+
+    <header>
+        <div class="container">
+            <a href="#home" class="logo">Eudy Joel</a>
+            <nav>
+                <a href="#home">Inicio</a>
+                <a href="#about">Sobre mí</a>
+                <a href="#experience">Experiencia</a>
+                <a href="#projects">Proyectos</a>
+                <a href="#github">GitHub</a>
+                <a href="#stack">Stack</a>
+                <a href="#contact">Contacto</a>
+            </nav>
+            <button class="menu-toggle">Menu</button>
+        </div>
     </header>
 
     <main>
-        <!-- Hero Section -->
         <section id="home" class="hero">
+            <div class="hero-decoration"></div>
             <div class="container">
                 <div class="hero-content">
                     <div class="hero-text">
-                        <span class="badge">Backend Developer</span>
+                        <span class="hero-badge">
+                            <i data-lucide="code"></i>
+                            Backend Developer
+                        </span>
                         <h1>Hola, soy <span class="accent">Eudy Joel</span></h1>
-                        <p>Construyo soluciones backend robustas y escalables con un enfoque en el rendimiento y la
-                            seguridad.</p>
+                        <p>Construyo soluciones backend robustas y escalables. Enfoque en rendimiento, seguridad y
+                            código mantenible.</p>
                         <div class="hero-buttons">
-                            <a href="#projects" class="btn btn-primary">Ver Proyectos</a>
-                            <a href="#contact" class="btn btn-outline">Contáctame</a>
-                            <a href="https://docs.google.com/document/d/1Hrg41Zbk36GDmYCEDqEFt3qZeU6ibi9mpzTeYfYooE8/edit?usp=drive_link" class="btn btn-cv" target="_blank">
-                                <i data-lucide="view"></i> CV
+                            <a href="#projects" class="btn btn-primary">
+                                <i data-lucide="folder"></i> Proyectos
+                            </a>
+                            <a href="#contact" class="btn btn-outline">
+                                <i data-lucide="mail"></i> Contacto
+                            </a>
+                            <a href="https://docs.google.com/document/d/1Hrg41Zbk36GDmYCEDqEFt3qZeU6ibi9mpzTeYfYooE8/edit?usp=drive_link"
+                                target="_blank" class="btn btn-outline">
+                                <i data-lucide="file-text"></i> CV
                             </a>
                         </div>
                         <div class="social-links">
-                            <a href="https://github.com/Joel-RD" target="_blank" class="social-link"
-                                aria-label="GitHub">
+                            <a href="https://github.com/Joel-RD" target="_blank" aria-label="GitHub">
                                 <i data-lucide="github"></i>
-
                             </a>
                             <a href="https://www.linkedin.com/in/eudy-joel-reyes-b38534347/" target="_blank"
-                                class="social-link" aria-label="LinkedIn">
+                                aria-label="LinkedIn">
                                 <i data-lucide="linkedin"></i>
                             </a>
-                            <a href="https://x.com/JoelEudyRD" class="social-link" target="_blank" aria-label="Twitter">
+                            <a href="https://x.com/JoelEudyRD" target="_blank" aria-label="Twitter">
                                 <i data-lucide="twitter"></i>
                             </a>
                         </div>
                     </div>
                     <div class="hero-image">
-                        <div class="profile-image">
-                            <img src="files/img/962a51fd-e58c-4bd7-b688-69e5a960a7eb.png" alt="Eudy Joel">
+                        <div class="profile-wrapper">
+                            <img src="./files/img/962a51fd-e58c-4bd7-b688-69e5a960a7eb.png" alt="Eudy Joel">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- About Section -->
-        <section id="about" class="about">
+        <section id="about">
             <div class="container">
                 <div class="section-header">
-                    <span class="badge">Sobre Mí</span>
-                    <h2>Conóceme</h2>
+                    <h2>Sobre <span>Mí</span></h2>
+                    <p>Desarrollador backend con pasión por crear sistemas eficientes</p>
                 </div>
                 <div class="about-content">
                     <div class="about-text">
                         <h3>Quién Soy</h3>
-                        <p>
-                            Soy un apasionado desarrollador backend junior con una creciente experiencia en la
-                            construcción del lado del servidor de aplicaciones. Con una base sólida en JavaScript y
-                            TypeScript, disfruto resolviendo problemas y aprendiendo continuamente nuevas tecnologías.
-                        </p>
-                        <p>
-                            Mi viaje en el desarrollo de software comenzó con un profundo interés en cómo funcionan los
-                            sistemas detrás de escena. Estoy enfocado en crear código eficiente y mantenible y en
-                            expandir
-                            mi conocimiento en tecnologías backend.
-                        </p>
+                        <p>Desarrollador backend junior con experiencia en la construcción del lado del servidor de
+                            aplicaciones. Mi enfoque está en crear código eficiente, mantenible y escalable.</p>
+                        <p>Comenzé mi viaje en programación con un interés profundo en cómo funcionan los sistemas
+                            detrás de escenas. Disfruto resolviendo problemas y aprendiendo continuamente nuevas
+                            tecnologías.</p>
                     </div>
-                    <div class="about-stats">
-                        <div class="stat-card">
+                    <div class="stats-grid">
+                        <div class="stat-item">
                             <h4>1+</h4>
-                            <p>Año de experiencia</p>
+                            <p>Años Exp</p>
                         </div>
-                        <div class="stat-card">
+                        <div class="stat-item">
                             <h4>4</h4>
-                            <p>Proyectos completados</p>
+                            <p>Proyectos</p>
                         </div>
-                        <div class="stat-card">
+                        <div class="stat-item">
                             <h4>3+</h4>
-                            <p>Clientes satisfechos</p>
+                            <p>Clientes</p>
                         </div>
-                        <div class="stat-card">
+                        <div class="stat-item">
                             <h4>100+</h4>
-                            <p>Horas de estudio</p>
+                            <p>Horas Code</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Experience Section -->
-        <section id="experience" class="experience">
+        <section id="experience">
             <div class="container">
                 <div class="section-header">
-                    <span class="badge">Experiencia</span>
-                    <h2>Viaje profesional.</h2>
+                    <h2>Experiencia</h2>
+                    <p>Mi viaje profesional en el desarrollo</p>
                 </div>
                 <div class="timeline">
                     <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <div class="timeline-header">
-                                <span class="timeline-date">2025 - Present</span>
-                                <span class="badge-small">Backend Junior</span>
-                            </div>
-                            <h3>Desarrollador Backend Junior</h3>
-                            <p>Desarrollo de APIs RESTful con Node.js y Express. Trabajo con bases de datos PostgreSQL e
-                                implementación de sistemas de autenticación.</p>
-                        </div>
+                        <span class="timeline-date">2025 — Presente</span>
+                        <h3>Desarrollador Backend Junior</h3>
+                        <p>Desarrollo de APIs RESTful con Node.js y Express. Trabajo con PostgreSQL e implementación de
+                            sistemas de autenticación JWT.</p>
+                        <span class="timeline-tag">Node.js / Express / PostgreSQL</span>
                     </div>
                     <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <div class="timeline-header">
-                                <span class="timeline-date">2024 - 2025</span>
-                                <span class="badge-small">Tech Bootcamp</span>
-                            </div>
-                            <h3>Backend Development Estudiante</h3>
-                            <p>Completé una formación intensiva en tecnologías backend, incluyendo Node.js, Express y
-                                gestión de bases de datos. Desarrollé varios proyectos como parte del programa.</p>
-                        </div>
+                        <span class="timeline-date">2024 — 2025</span>
+                        <h3>Tech Bootcamp</h3>
+                        <p>Formación intensiva en tecnologías backend. Desarrollé varios proyectos incluyendo
+                            aplicaciones full-stack.</p>
+                        <span class="timeline-tag">Node.js / Express / PostgreSQL</span>
                     </div>
                     <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <div class="timeline-header">
-                                <span class="timeline-date">2023 - 2024</span>
-                                <span class="badge-small">Self-learning</span>
-                            </div>
-                            <h3>Entusiasta de la Programación</h3>
-                            <p>Empecé a aprender programación con cursos y tutoriales en línea. Creé pequeños proyectos
-                                para practicar los fundamentos de JavaScript.</p>
-                        </div>
+                        <span class="timeline-date">2023 — 2024</span>
+                        <h3>Entusiasta</h3>
+                        <p>Aprendizaje autodidacta con cursos y tutoriales. Creé pequeños proyectos para practicar
+                            fundamentos.</p>
+                        <span class="timeline-tag">JavaScript / HTML / CSS</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Projects Section -->
-        <section id="projects" class="projects">
+        <section id="projects">
             <div class="container">
                 <div class="section-header">
-                    <span class="badge">Proyectos</span>
-                    <h2>Mis trabajos más recientes.</h2>
+                    <h2>Proyectos</h2>
+                    <p>Trabajos recientes que demuestran mis habilidades</p>
                 </div>
 
-                <!-- Featured Project -->
                 <div class="featured-project">
                     <div class="project-image">
-                        <img src="files/img/superMarketeudy.png" alt="Featured Project">
+                        <img src="./files/img/superMarketeudy.png" alt="Super Market API">
                     </div>
                     <div class="project-details">
-                        <span class="badge">Proyecto Destacado</span>
-                        <h3>Super-Market API Payment.</h3>
-                        <p>
-                            Este proyecto es una aplicación web para la gestión de un supermercado. La aplicación
-                            permite a los usuarios registrarse, iniciar sesión, realizar compras y gestionar productos
-                            y ventas. Está construida utilizando Node.js, Express y PostgreSQL, y utiliza Handlebars
-                            como motor de plantillas para la interfaz de usuario.
-                        </p>
+                        <h3>Super-Market API</h3>
+                        <p>Aplicación web para gestión de supermercado. Registro de usuarios, compras y gestión de
+                            productos. Node.js, Express, PostgreSQL y Handlebars.</p>
                         <div class="tech-tags">
                             <span class="tech-tag">Node.js</span>
                             <span class="tech-tag">Express</span>
                             <span class="tech-tag">PostgreSQL</span>
                             <span class="tech-tag">JWT</span>
-                            <span class="tech-tag">SQL</span>
                         </div>
                         <div class="project-links">
                             <a href="https://github.com/Joel-RD/Market" target="_blank" class="btn btn-outline btn-sm">
@@ -213,76 +184,66 @@
                             </a>
                             <a href="https://market-y5zv.onrender.com/register" target="_blank"
                                 class="btn btn-primary btn-sm">
-                                <i data-lucide="external-link"></i> Demo en Vivo
+                                <i data-lucide="external-link"></i> Demo
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Other Projects -->
                 <div class="project-grid">
                     <div class="project-card">
-                        <h3>Real Time Chat con Socket.io</h3>
-                        <p>RealTimeChat es una aplicación de chat en tiempo real que permite a los usuarios enviar
-                            mensajes, compartir imágenes y realizar videollamadas utilizando tecnologías como Socket.IO,
-                            WebRTC y PeerJS.</p>
+                        <h3>Real Time Chat</h3>
+                        <p>Chat en tiempo real con Socket.IO, WebRTC y PeerJS.</p>
                         <div class="tech-tags">
                             <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">Express</span>
                             <span class="tech-tag">WebRTC</span>
-                            <span class="tech-tag">PeerJS</span>
+                            <span class="tech-tag">Socket.io</span>
                         </div>
                         <div class="card-footer">
                             <a href="https://github.com/Joel-RD/RealTimeChat" target="_blank"
                                 class="btn btn-outline btn-sm">
-                                <i data-lucide="github"></i> Código
+                                <i data-lucide="github"></i>
                             </a>
                             <a href="https://realtimechat-za8g.onrender.com/" target="_blank"
                                 class="btn btn-primary btn-sm">
-                                <i data-lucide="external-link"></i> Demo en Vivo
+                                <i data-lucide="external-link"></i>
                             </a>
                         </div>
                     </div>
 
                     <div class="project-card">
-                        <h3>Datos curiosos con Leaflet.js</h3>
-                        <p>Permite manejar un listado de países que contienen datos sobre los países (nombres,
-                            capitales, población, superficie, etc.), además de agregar un listado de
-                            datos curiosos sobre el país.</p>
+                        <h3>Leaflet.js Datos</h3>
+                        <p>Gestión de países con datos curiosos.</p>
                         <div class="tech-tags">
                             <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">Express</span>
                             <span class="tech-tag">TypeScript</span>
                             <span class="tech-tag">Leaflet.js</span>
                         </div>
                         <div class="card-footer">
                             <a href="https://github.com/Joel-RD/map-lat-and-long" target="_blank"
                                 class="btn btn-outline btn-sm">
-                                <i data-lucide="github"></i> Código
+                                <i data-lucide="github"></i>
                             </a>
                             <a href="map-lat-and-long.onrender.com/" target="_blank" class="btn btn-primary btn-sm">
-                                <i data-lucide="external-link"></i> Demo en Vivo
+                                <i data-lucide="external-link"></i>
                             </a>
                         </div>
                     </div>
 
                     <div class="project-card">
-                        <h3>Acortador de Enlaces</h3>
-                        <p>"Erdl", es un acortador de URL. Está desarrollado principalmente en HTML, TypeScript y JavaScript. Su objetivo es proporcionar
-                            una solución facil para acortar enlaces ademas facilitando su gestión y compartición.
-                        </p>
+                        <h3>Erdl URL Shortener</h3>
+                        <p>Acortador de URLs con Node.js y PostgreSQL.</p>
                         <div class="tech-tags">
                             <span class="tech-tag">Node.js</span>
                             <span class="tech-tag">Express</span>
                             <span class="tech-tag">PostgreSQL</span>
-                            <span class="tech-tag">RESTful API</span>
                         </div>
                         <div class="card-footer">
                             <a href="https://github.com/Joel-RD/erdl" target="_blank" class="btn btn-outline btn-sm">
-                                <i data-lucide="github"></i> Código
+                                <i data-lucide="github"></i>
                             </a>
                             <a href="erdl.my" target="_blank" class="btn btn-primary btn-sm">
-                                <i data-lucide="external-link"></i> Demo en Vivo
+                                <i data-lucide="external-link"></i>
                             </a>
                         </div>
                     </div>
@@ -290,165 +251,147 @@
             </div>
         </section>
 
-        <!-- Tech Stack Section -->
-        <section id="stack" class="stack">
+        <section id="stack">
             <div class="container">
                 <div class="section-header">
-                    <span class="badge">Mi Stack</span>
-                    <h2>Tecnologías con las que trabajo.</h2>
+                    <h2>Stack Tech</h2>
+                    <p>Tecnologías con las que trabajo</p>
                 </div>
-
                 <div class="stack-grid">
                     <div class="stack-card">
                         <h3>Lenguajes</h3>
-                        <ul class="stack-list">
-                            <li><span class="stack-dot"></span>JavaScript</li>
-                            <li><span class="stack-dot"></span>TypeScript</li>
-                            <li><span class="stack-dot"></span>SQL</li>
+                        <ul>
+                            <li>JavaScript</li>
+                            <li>TypeScript</li>
+                            <li>SQL</li>
                         </ul>
                     </div>
-
                     <div class="stack-card">
                         <h3>Frameworks</h3>
-                        <ul class="stack-list">
-                            <li><span class="stack-dot"></span>Node.js</li>
-                            <li><span class="stack-dot"></span>Express</li>
+                        <ul>
+                            <li>Node.js</li>
+                            <li>Express</li>
                         </ul>
                     </div>
-
                     <div class="stack-card">
-                        <h3>Bases de Datos</h3>
-                        <ul class="stack-list">
-                            <li><span class="stack-dot"></span>PostgreSQL</li>
-                            <li><span class="stack-dot"></span>MongoDB</li>
+                        <h3>Databases</h3>
+                        <ul>
+                            <li>PostgreSQL</li>
+                            <li>MongoDB</li>
                         </ul>
                     </div>
-
                     <div class="stack-card">
-                        <h3>Herramientas</h3>
-                        <ul class="stack-list">
-                            <li><span class="stack-dot"></span>Git</li>
-                            <li><span class="stack-dot"></span>GitHub</li>
-                            <li><span class="stack-dot"></span>Terminal</li>
+                        <h3>Tools</h3>
+                        <ul>
+                            <li>Git</li>
+                            <li>GitHub</li>
+                            <li>Terminal</li>
                         </ul>
                     </div>
-
                     <div class="stack-card">
-                        <h3>Desarrollo de API</h3>
-                        <ul class="stack-list">
-                            <li><span class="stack-dot"></span>RESTful APIs</li>
-                            <li><span class="stack-dot"></span>API Documentation</li>
-                            <li><span class="stack-dot"></span>Authentication</li>
+                        <h3>APIs</h3>
+                        <ul>
+                            <li>RESTful</li>
+                            <li>Auth</li>
+                            <li>Docs</li>
                         </ul>
                     </div>
-
                     <div class="stack-card">
-                        <h3>Otras Habilidades</h3>
-                        <ul class="stack-list">
-                            <li><span class="stack-dot"></span>Resolución de Problemas</li>
-                            <li><span class="stack-dot"></span>Depuración</li>
-                            <li><span class="stack-dot"></span>Revisión de Código</li>
-                            <li><span class="stack-dot"></span>Documentación</li>
+                        <h3>Skills</h3>
+                        <ul>
+                            <li>Debug</li>
+                            <li>Docs</li>
+                            <li>Code Review</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="contact">
+        <section id="github">
             <div class="container">
                 <div class="section-header">
-                    <span class="badge">Contacto</span>
-                    <h2>Ponte en contacto...</h2>
-                    <p class="section-description">
-                        ¿Tienes un proyecto en mente o quieres discutir oportunidades potenciales? ¡Siéntete libre de
-                        contactarme!
-                    </p>
+                    <h2>GitHub</h2>
+                    <p>Mis repositorios públicos</p>
                 </div>
-
-                <div class="contact-content">
-                    <div class="contact-img">
-                        <img src="files/img/962a51fd-e58c-4bd7-b688-69e5a960a7eb.png" alt="">
+                <div class="github-header">
+                    <div class="github-stats">
+                        <div class="github-stat">
+                            <i data-lucide="folder-code"></i>
+                            <span id="repo-count">0</span> repositorios
+                        </div>
+                        <div class="github-stat">
+                            <i data-lucide="star"></i>
+                            <span id="total-stars">0</span> estrellas
+                        </div>
                     </div>
-                    <div class="contact-info">
-                        <h3>Información de contacto.</h3>
-                        <div class="contact-methods">
-                            <div class="contact-method">
-                                <div class="contact-icon">
-                                    <i data-lucide="github"></i>
-                                </div>
-                                <div class="contact-details">
-                                    <h4>GitHub</h4>
-                                    <p><a href="https://github.com/Joel-RD" target="_blank"
-                                            rel="noopener noreferrer">github.com/Joel-RD</a></p>
-                                </div>
-                            </div>
+                </div>
+                <div class="repos-grid" id="repos-container">
+                    <div class="repos-loading">
+                        <div class="repos-loading-spinner"></div>
+                        <p>Cargando repositorios...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                            <div class="contact-method">
-                                <div class="contact-icon">
-                                    <i data-lucide="linkedin"></i>
-                                </div>
-                                <div class="contact-details">
-                                    <h4>LinkedIn</h4>
-                                    <p><a href="https://www.linkedin.com/in/eudy-joel-reyes-b38534347/" target="_blank"
-                                            rel="noopener noreferrer">linkedin.com/in/eudy-joel-reyes-b38534347</a></p>
-                                </div>
-                            </div>
-
-                            <div class="contact-method">
-                                <div class="contact-icon">
-                                    <i data-lucide="twitter"></i>
-                                </div>
-                                <div class="contact-details">
-                                    <h4>Twitter</h4>
-                                    <p><a href="https://x.com/JoelEudyRD" target="_blank"
-                                            rel="noopener noreferrer">x.com/joel_eudy</a></p>
-                                </div>
+        <section id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Contacto</h2>
+                    <p>¿Tienes un proyecto? Hablemos</p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i data-lucide="github"></i>
+                            <div>
+                                <h4>GitHub</h4>
+                                <a href="https://github.com/Joel-RD" target="_blank">github.com/Joel-RD</a>
                             </div>
                         </div>
-
-                        <div class="availability-card">
-                            <h4>Disponibilidad</h4>
-                            <p>
-                                Actualmente disponible para proyectos independientes y oportunidades a tiempo completo.
-                            </p>
+                        <div class="contact-method">
+                            <i data-lucide="linkedin"></i>
+                            <div>
+                                <h4>LinkedIn</h4>
+                                <a href="https://www.linkedin.com/in/eudy-joel-reyes-b38534347/"
+                                    target="_blank">linkedin.com/in/eudy-joel-reyes</a>
+                            </div>
                         </div>
+                        <div class="contact-method">
+                            <i data-lucide="twitter"></i>
+                            <div>
+                                <h4>Twitter</h4>
+                                <a href="https://x.com/JoelEudyRD" target="_blank">x.com/JoelEudyRD</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="availability">
+                        <h4><span class="availability-indicator"></span>Disponible</h4>
+                        <p>Para proyectos independientes y oportunidades a tiempo completo.</p>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="footer">
+    <footer>
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <a href="#home" class="logo">Eudy<span>Joel</span></a>
-                    <p>Desarrollador Backend</p>
-                </div>
-
-                <div class="footer-social">
-                    <a href="https://github.com/Joel-RD" target="_blank" class="social-link" aria-label="GitHub">
-                        <i data-lucide="github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/eudy-joel-reyes-b38534347/" target="_blank" class="social-link"
-                        aria-label="LinkedIn">
-                        <i data-lucide="linkedin"></i>
-                    </a>
-                    <a href="https://github.com/Joel-RD" class="social-link" target="_blank" aria-label="Twitter">
-                        <i data-lucide="twitter"></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p>© <span id="currentYear"></span> Eudy Joel. Todos los derechos reservados.</p>
+            <div class="logo">Eudy Joel</div>
+            <p>© 2025 Backend Developer</p>
+            <div class="footer-social">
+                <a href="https://github.com/Joel-RD" target="_blank" aria-label="GitHub">
+                    <i data-lucide="github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/eudy-joel-reyes-b38534347/" target="_blank" aria-label="LinkedIn">
+                    <i data-lucide="linkedin"></i>
+                </a>
+                <a href="https://x.com/JoelEudyRD" target="_blank" aria-label="Twitter">
+                    <i data-lucide="twitter"></i>
+                </a>
             </div>
         </div>
     </footer>
-
     <script src="script.js"></script>
 </body>
 
